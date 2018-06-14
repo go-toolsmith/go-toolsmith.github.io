@@ -57,7 +57,7 @@ func main() {
 ```
 <table><tr><td><details><summary>En</summary>
 <p>In this example we're using two packages from go-toolsmith: <a href="https://github.com/go-toolsmith/strparse">strparse</a>
-and <a href="https://github.com/go-toolsmith/astequal"></a>.</p>
+and <a href="https://github.com/go-toolsmith/astequal">astequal</a>.</p>
 
 <p>strparse package makes it easier to create simple AST nodes.
 Basically, it's a simple wrapper around parser.ParseExpr and parser.ParseFile from
@@ -69,7 +69,7 @@ leads to different results in the snippet above.</p>
 
 </details></td><td><details><summary>Ru</summary>
 <p>В этом примере используются два пакета из go-toolsmith: <a href="https://github.com/go-toolsmith/strparse">strparse</a>
-и <a href="https://github.com/go-toolsmith/astequal"></a>.</p>
+и <a href="https://github.com/go-toolsmith/astequal">astequal</a>.</p>
 
 <p>Пакет strparse упрощает создание простых AST элементов и является простой обёрткой
 вызовов parser.ParseExpr и parser.ParseFile из пакета go/parser. Особенно полезен для примеров и тестов.</p>
