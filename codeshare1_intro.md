@@ -1,3 +1,5 @@
+# codeshare1: intro
+
 ```go
 // This is first document from "codeshare" series.
 //
@@ -56,7 +58,7 @@ func main() {
 }
 ```
 <table><tr><td><details><summary>En</summary>
-<p>In this example we're using two packages from go-toolsmith: <a href="https://github.com/go-toolsmith/strparse">strparse</a>
+<p>In this example we're using two packages from <a href="https://github.com/go-toolsmith">go-toolsmith</a>: <a href="https://github.com/go-toolsmith/strparse">strparse</a>
 and <a href="https://github.com/go-toolsmith/astequal">astequal</a>.</p>
 
 <p>strparse package makes it easier to create simple AST nodes.
@@ -68,7 +70,7 @@ Unlike reflect.DeepEqual, it does not compare source positions, which
 leads to different results in the snippet above.</p>
 
 </details></td><td><details><summary>Ru</summary>
-<p>В этом примере используются два пакета из go-toolsmith: <a href="https://github.com/go-toolsmith/strparse">strparse</a>
+<p>В этом примере используются два пакета из <a href="https://github.com/go-toolsmith">go-toolsmith</a>: <a href="https://github.com/go-toolsmith/strparse">strparse</a>
 и <a href="https://github.com/go-toolsmith/astequal">astequal</a>.</p>
 
 <p>Пакет strparse упрощает создание простых AST элементов и является простой обёрткой
