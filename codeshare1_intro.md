@@ -1,5 +1,7 @@
 # codeshare1: intro
 
+### Codeshare format quick overview
+
 ```go
 // This is first document from "codeshare" series.
 //
@@ -31,6 +33,8 @@ This makes it possible to use these pages as a source of code recipes.</p>
 данные страницы как источник рецептов.</p>
 </details></td></tr></table>
 
+### astparse and astequal packages
+
 ```go
 package main
 
@@ -46,7 +50,7 @@ import (
 
 func main() {
     // Two ways to create binary expression:
-    x := strparse.Expr(`1+2`)
+    x := strparse.Expr(`1 + 2`)
     y := &ast.BinaryExpr{
         Op: token.ADD,
         X:  &ast.BasicLit{Kind: token.INT, Value: "1"},
