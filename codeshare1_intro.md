@@ -32,7 +32,7 @@ This makes it possible to use these pages as a source of code recipes.</p>
 данные страницы как источник рецептов.</p>
 </details></td></tr></table>
 
-### astparse and astequal packages
+### strparse and astequal packages
 
 ```go
 package main
