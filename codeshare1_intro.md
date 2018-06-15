@@ -228,7 +228,8 @@ func main() {
 <table><tr><td><details><summary>En</summary>
 <p>Sometimes you need to pay extra attention for slices when working with AST.
 Empty and nil slices may lead to a different behavior.
-Code abode demonstrates how it affects <a href="https://golang.org/pkg/go/printer/">go/printer</a> package.</p>
+Code abode demonstrates how it affects <a href="https://golang.org/pkg/go/printer/">go/printer</a> package.
+Note the extra surrounding parenthesis around output parameters.</p>
 
 <p>When copying AST slice, you should do early nil check to avoid
 returning empty slice as a copy of nil slice.
@@ -240,7 +241,8 @@ It makes AST printing and convertions of it to string easier.</p>
 </details></td><td><details><summary>Ru</summary>
 <p>В некоторых случаях при работе с AST следует уделять особое внимание слайсам.
 Пустой и nil слайсы могут вести к разному поведению.
-Код выше демонстрирует это на примере пакета <a href="https://golang.org/pkg/go/printer/">go/printer</a>.</p>
+Код выше демонстрирует это на примере пакета <a href="https://golang.org/pkg/go/printer/">go/printer</a>.
+Внимание обратить стоит на наличие/отсутствие скобок вокруг возвращаемых параметров.</p>
 
 <p>При копировании слайсов стоит делать раннюю проверку на nil, чтобы
 избежать возвращения копии nil слайса в виде пустого слайса.
