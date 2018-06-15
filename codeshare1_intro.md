@@ -10,20 +10,22 @@
 // Every overview includes both audio and text.
 ```
 <table><tr><td><details><summary>En</summary>
-<p>All documents from this series are structured this way:
-sequence of code snippets with associated overview texts,
-which you are currently reading (or listening). There is also audio available
-for most of these overviews. The advantage of audio recording
+<audio controls style="min-width: 400px">
+    <source src="https://raw.githubusercontent.com/Quasilyte/arch_cfg/master/tmp/codeshare1_en_1.mp3" type="audio/mpeg">
+</audio>
+
+<p>All documents from this series are structured as a sequence
+of code snippets with associated overview texts, one of which
+you're currently reading (or listening). The advantage of audio recording
 is an ability to concentrate your eyes on code while listening to explanation.</p>
 
 <p>All code snippets contain comments that should make it possible
 to interpret the message properly even without reading the overview notes.
 This makes it possible to use these pages as a source of code recipes.</p>
 </details></td><td><details><summary>Ru</summary>
-<p>Все документы из этой серии структурированы следующим образом:
-последовательность сниппетов кода, к каждому из которых прилагается
-описание, которое вы в данный момент читаете (или слушаете).
-К большинству таких описаний доступна аудио версия.
+<p>Все документы из этой серии структурированы в виде последовательности
+из сниппетов кода, к каждому из которого прилагается описание, которое вы
+в данный момент читаете (или слушаете).
 Преимущество аудиозаписи в том, что вы можете продолжать концентрировать
 ваш взгляд на коде, воспринимая пояснения к нему через слух.</p>
 
