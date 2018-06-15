@@ -197,7 +197,7 @@ It allows you to perform ast.Node deep copy with a single call.</p>
 <p>You may want to clone AST when you need to get modified object without mutating original tree.</p>
 
 <p>astcopy does copy associated comments, but ignores ast.Object elements.
-In cause your tool needs to copy these objects, please, tell us about it in <a href="">issue#1</a></p>
+In cause your tool needs to copy these objects, please, tell us about it in <a href="https://github.com/go-toolsmith/astcopy/issues/1">issue#1</a></p>
 </details></td><td><details><summary>Ru</summary>
 <p>Ещё одним простым и полезным пакетом является <a href="https://github.com/go-toolsmith/astcopy">astcopy</a>.
 С его помощью можно копировать любой ast.Node.</p>
@@ -207,5 +207,45 @@ In cause your tool needs to copy these objects, please, tell us about it in <a h
 
 <p>astcopy копирует ассоциированные комментарии, но игнорирует ast.Object элементы.
 В случае, если в ваших задачах требуется копирование этих объектов,
-расскажите нам об этом в <a href="">issue#1</a></p>
+расскажите нам об этом в <a href="https://github.com/go-toolsmith/astcopy/issues/1">issue#1</a></p>
+</details></td></tr></table>
+
+### nil vs empty slice matters
+
+```go
+func main() {
+	proto := strparse.Expr(`func(x, y int) (a, b string)`).(*ast.FuncType)
+
+	x := astcopy.FuncType(proto)
+	x.Results.List[0].Names = nil // Nil names slice
+	astfmt.Println(x)             // => func(x, y int) string
+
+	y := astcopy.FuncType(proto)
+	y.Results.List[0].Names = []*ast.Ident{} // Empty names slice
+	astfmt.Fprintf(y)                        // => func(x, y int) (string)
+}
+```
+<table><tr><td><details><summary>En</summary>
+<p>Sometimes you need to pay extra attention for slices when working with AST.
+Empty and nil slices may lead to a different behavior.
+Code abode demonstrates how it affects <a href="https://golang.org/pkg/go/printer/">go/printer</a> package.</p>
+
+<p>When copying AST slice, you should do early nil check to avoid
+returning empty slice as a copy of nil slice.
+By the way, astcopy package provides several convenience functions for slice copying that
+do the proper right for you.</p>
+
+<p>You may had also noticed a href="https://github.com/go-toolsmith/astfmt">astfmt</a> package usage.
+It makes AST printing and convertions of it to string easier.</p>
+</details></td><td><details><summary>Ru</summary>
+<p>В некоторых случаях при работе с AST следует уделять особое внимание слайсам.
+Пустой и nil слайсы могут вести к разному поведению.
+Код выше демонстрирует это на примере пакета <a href="https://golang.org/pkg/go/printer/">go/printer</a>.</p>
+
+<p>При копировании слайсов стоит делать раннюю проверку на nil, чтобы
+избежать возвращения копии nil слайса в виде пустого слайса.
+Кстати, astcopy предоставляет функции для копирования слайсов, которые учитывают эти особенности.</p>
+
+<p>Вы также могли заметить использование нового пакета, <a href="https://github.com/go-toolsmith/astfmt">astfmt</a>.
+Он позволяет с лёгкостью печатать AST элементы и приводить их к строковому представлению.</p>
 </details></td></tr></table>
