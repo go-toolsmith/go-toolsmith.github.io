@@ -35,4 +35,4 @@ Package strparse provides convenience wrappers around `go/parser` for simple exp
 
 Projects that use `go-toolsmith` and are willing to share that fact.
 
-* [go-critic](https://github.com/go-critic/go-critic) linter.
+* [go-critic](https://github.com/go-critic/go-critic) linter
