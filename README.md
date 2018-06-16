@@ -3,7 +3,13 @@
 Site for Go tools crafters: combined documentation for [go-toolsmith](https://github.com/go-toolsmith)
 packages, external references and other useful resources.
 
+There are two major project goals:
+1. Provide reusable libraries that make Go tools implementation easier.
+2. Knowledge sharing. Make tools development less frustrating by providing docs for parts that are not easy to grasp and/or hard to find on the internet for whatever reason.
+
 ## Packages
+
+List of packages maintained under `go-toolsmith` project.
 
 ### [astcopy](https://github.com/go-toolsmith/astcopy) [![GoDoc](https://godoc.org/github.com/go-toolsmith/astcopy?status.svg)](https://godoc.org/github.com/go-toolsmith/astcopy)
 
@@ -24,3 +30,9 @@ Package astp provides AST predicates.
 ### [strparse](https://github.com/go-toolsmith/strparse) [![GoDoc](https://godoc.org/github.com/go-toolsmith/strparse?status.svg)](https://godoc.org/github.com/go-toolsmith/strparse)
 
 Package strparse provides convenience wrappers around `go/parser` for simple expr/stmt/decl parsing from string. 
+
+## Users
+
+Projects that use `go-toolsmith` and are willing to share that fact.
+
+* [go-critic](https://github.com/go-critic/go-critic) linter.
