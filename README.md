@@ -5,7 +5,7 @@ packages, external references and other useful resources.
 
 ## Packages
 
-### [astcopy](https://github.com/go-toolsmith/astcopy)
+### [astcopy](https://github.com/go-toolsmith/astcopy) [![GoDoc](https://godoc.org/github.com/go-toolsmith/astcopy?status.svg)](https://godoc.org/github.com/go-toolsmith/astcopy)
 
 Package astcopy implements Go AST deep copy operations. 
 
@@ -13,14 +13,14 @@ Package astcopy implements Go AST deep copy operations.
 
 Package astequal provides AST (deep) equallity check operations. 
 
-### [astfmt](https://github.com/go-toolsmith/astfmt)
+### [astfmt](https://github.com/go-toolsmith/astfmt) [![GoDoc](https://godoc.org/github.com/go-toolsmith/astfmt?status.svg)](https://godoc.org/github.com/go-toolsmith/astfmt)
 
 Package astfmt implements `ast.Node` formatting with fmt-like API. 
 
-### [astp](https://github.com/go-toolsmith/astp)
+### [astp](https://github.com/go-toolsmith/astp) [![GoDoc](https://godoc.org/github.com/go-toolsmith/astp?status.svg)](https://godoc.org/github.com/go-toolsmith/astp)
 
 Package astp provides AST predicates. 
 
-### [strparse](https://github.com/go-toolsmith/strparse)
+### [strparse](https://github.com/go-toolsmith/strparse) [![GoDoc](https://godoc.org/github.com/go-toolsmith/strparse?status.svg)](https://godoc.org/github.com/go-toolsmith/strparse)
 
 Package strparse provides convenience wrappers around `go/parser` for simple expr/stmt/decl parsing from string. 
