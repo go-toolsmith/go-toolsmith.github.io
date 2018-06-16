@@ -9,7 +9,7 @@ packages, external references and other useful resources.
 
 Package astcopy implements Go AST deep copy operations. 
 
-### [astequal](https://github.com/go-toolsmith/astequal)
+### [astequal](https://github.com/go-toolsmith/astequal) [![GoDoc](https://godoc.org/github.com/go-toolsmith/astequal?status.svg)](https://godoc.org/github.com/go-toolsmith/astequal)
 
 Package astequal provides AST (deep) equallity check operations. 
 
