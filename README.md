@@ -11,6 +11,10 @@ There are two major project goals:
 
 List of packages maintained under `go-toolsmith` project.
 
+### [astinfo](https://github.com/go-toolsmith/astinfo) [![GoDoc](https://godoc.org/github.com/go-toolsmith.astinfo?status.svg)](https://godoc.org/github.com/go-toolsmith.astinfo)
+
+Package astinfo records useful AST information like node parents and such.
+
 ### [astcopy](https://github.com/go-toolsmith/astcopy) [![GoDoc](https://godoc.org/github.com/go-toolsmith/astcopy?status.svg)](https://godoc.org/github.com/go-toolsmith/astcopy)
 
 Package astcopy implements Go AST deep copy operations. 
