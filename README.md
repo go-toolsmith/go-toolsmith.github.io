@@ -31,6 +31,10 @@ Package astfmt implements `ast.Node` formatting with fmt-like API.
 
 Package astp provides AST predicates. 
 
+### [astcast](https://github.com/go-toolsmith/astcast) [![GoDoc](https://godoc.org/github.com/go-toolsmith/astcast?status.svg)](https://godoc.org/github.com/go-toolsmith/astcast)
+
+ Package astcast wraps type assertion operations in such way that you don't have to worry about nil pointer results anymore. 
+
 ### [strparse](https://github.com/go-toolsmith/strparse) [![GoDoc](https://godoc.org/github.com/go-toolsmith/strparse?status.svg)](https://godoc.org/github.com/go-toolsmith/strparse)
 
 Package strparse provides convenience wrappers around `go/parser` for simple expr/stmt/decl parsing from string. 
