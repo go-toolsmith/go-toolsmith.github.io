@@ -39,6 +39,10 @@ Package astp provides AST predicates.
 
 Package strparse provides convenience wrappers around `go/parser` for simple expr/stmt/decl parsing from string. 
 
+### [typep](https://github.com/go-toolsmith/typep) [![GoDoc](https://godoc.org/github.com/go-toolsmith/typep?status.svg)](https://godoc.org/github.com/go-toolsmith/typep)
+
+Package typep provides type predicates.
+
 ## Users
 
 Projects that use `go-toolsmith` and are willing to share that fact.
