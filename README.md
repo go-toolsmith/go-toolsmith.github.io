@@ -50,3 +50,4 @@ Projects that use `go-toolsmith` and are willing to share that fact.
 * [go-critic](https://github.com/go-critic/go-critic) linter
 * [go-consistent](https://github.com/Quasilyte/go-consistent) linter
 * [go-lintpack](https://github.com/go-lintpack/lintpack) linter builder
+* [go-namecheck](https://github.com/Quasilyte/go-namecheck) linter
