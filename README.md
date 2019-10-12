@@ -11,7 +11,7 @@ There are two major project goals:
 
 List of packages maintained under `go-toolsmith` project.
 
-### [astinfo](https://github.com/go-toolsmith/astinfo) [![GoDoc](https://godoc.org/github.com/go-toolsmith.astinfo?status.svg)](https://godoc.org/github.com/go-toolsmith.astinfo)
+### [astinfo](https://github.com/go-toolsmith/astinfo) [![GoDoc](https://godoc.org/github.com/go-toolsmith/astinfo?status.svg)](https://godoc.org/github.com/go-toolsmith/astinfo)
 
 Package astinfo records useful AST information like node parents and such.
 
